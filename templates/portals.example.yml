@@ -21,169 +21,179 @@
 
 title_filter:
   positive:
-    # [CUSTOMIZE] Add keywords matching YOUR target roles
-    # -- AI/ML roles --
-    - "AI"
-    - "ML"
-    - "LLM"
-    - "Agent"
-    - "Agentic"
-    - "GenAI"
-    - "Generative AI"
-    - "NLP"
-    - "LLMOps"
-    - "MLOps"
-    - "Voice AI"
-    - "Conversational AI"
-    - "Speech"
-    # -- German AI/ML keywords (DACH market) --
-    - "KI"
-    - "Künstliche Intelligenz"
-    - "KI Engineer"
-    - "KI Trainer"
-    - "Dozent"
-    - "Weiterbildung"
-    # -- Engineering roles --
-    - "Platform Engineer"
-    - "Solutions Architect"
-    - "Solutions Engineer"
-    - "Forward Deployed"
-    - "Deployed Engineer"
-    - "Customer Engineer"
-    - "Integration Engineer"
-    # -- Product roles --
-    - "Product Manager"
-    - "Technical PM"
-    # -- Automation roles --
-    - "Automation"
-    - "Hyperautomation"
-    - "Low-Code"
-    - "No-Code"
-    - "GTM Engineer"
-    - "RevOps"
-    - "Business Systems"
-    - "Internal Tools"
-    - "Transformation"
+    # -- Motion Design & Animation --
+    - "Motion Designer"
+    - "Motion Design"
+    - "Motion Graphics"
+    - "Animation Director"
+    - "Animator"
+    - "Motion Artist"
+    - "2D Animator"
+    - "After Effects"
+    # -- AR / VR / XR --
+    - "AR Developer"
+    - "AR Engineer"
+    - "XR Developer"
+    - "VR Developer"
+    - "Immersive"
+    - "Spatial"
+    - "Mixed Reality"
+    - "Extended Reality"
+    - "Unity Developer"
+    - "Lens Studio"
+    # -- Creative Technologist --
+    - "Creative Technologist"
+    - "Creative Technology"
+    - "Creative Developer"
+    - "Creative Coder"
+    - "Technical Artist"
+    - "Technical Creative"
+    # -- Brand & Visual Identity --
+    - "Brand Designer"
+    - "Brand Identity"
+    - "Visual Identity"
+    - "Identity Designer"
+    - "Graphic Designer"
+    - "Visual Designer"
+    # -- Video & Content Production --
+    - "Video Editor"
+    - "Video Producer"
+    - "Content Creator"
+    - "Creative Producer"
+    - "Social Media Creator"
+    - "Content Production"
+    # -- Creative Direction --
+    - "Creative Director"
+    - "Head of Design"
+    - "Head of Creative"
+    - "Design Director"
+    - "Art Director"
+    # -- Design (general) --
+    - "UI Designer"
+    - "UX Designer"
+    - "Product Designer"
+    - "Digital Designer"
+    # -- Creative Strategy --
+    - "Creative Strategist"
+    - "Creative Strategy"
   negative:
-    # [CUSTOMIZE] Add keywords for roles you want to exclude
+    # Exclude roles outside Tolu's focus
     - "Junior"
     - "Intern"
-    - ".NET"
-    - "Java "
-    - "iOS"
-    - "Android"
-    - "PHP"
-    - "Ruby"
-    - "Embedded"
-    - "Firmware"
-    - "FPGA"
-    - "ASIC"
+    - "Internship"
+    - "Graduate Scheme"
+    - "Print only"
+    - "Accountant"
+    - "Finance"
+    - "Legal"
+    - "HR Manager"
+    - "Recruiter"
+    - "Sales Representative"
+    - "Software Engineer"
+    - "Backend"
+    - "DevOps"
+    - "Data Engineer"
+    - "Data Scientist"
+    - "Machine Learning Engineer"
     - "Blockchain"
     - "Web3"
     - "Crypto"
-    - "Salesforce Admin"
-    - "SAP "
-    - "Oracle EBS"
-    - "Mainframe"
     - "COBOL"
+    - "Mainframe"
+    - "SAP "
+    - "Embedded"
+    - "Firmware"
   seniority_boost:
     # These prefixes add relevance but are not required
     - "Senior"
-    - "Staff"
-    - "Principal"
     - "Lead"
     - "Head"
+    - "Principal"
     - "Director"
+    - "Staff"
 
 # -- Search queries --
 # Each query triggers a WebSearch. Use site: to filter by portal.
-# The scanner extracts title, URL, and company from results.
 
 search_queries:
-  # -- Ashby --
-  - name: Ashby — AI PM
-    query: 'site:jobs.ashbyhq.com "AI Product Manager" OR "Senior Product Manager AI" remote'
+  # -- Ashby — Creative & Motion --
+  - name: Ashby — Motion Designer
+    query: 'site:jobs.ashbyhq.com "Motion Designer" OR "Motion Graphics" OR "Animation Director" remote OR "United Kingdom"'
     enabled: true
 
-  - name: Ashby — Solutions Architect
-    query: 'site:jobs.ashbyhq.com "Solutions Architect" AI OR automation remote'
+  - name: Ashby — Creative Technologist
+    query: 'site:jobs.ashbyhq.com "Creative Technologist" OR "Creative Developer" OR "Technical Artist" remote'
     enabled: true
 
-  - name: Ashby — AI Engineer
-    query: 'site:jobs.ashbyhq.com "AI Engineer" OR "LLM Engineer" OR "Forward Deployed" remote'
+  - name: Ashby — AR/VR/XR Developer
+    query: 'site:jobs.ashbyhq.com "AR Developer" OR "XR Developer" OR "VR Developer" OR "Unity Developer" OR "Immersive" remote'
     enabled: true
 
-  - name: Ashby — Agentic
-    query: 'site:jobs.ashbyhq.com "Agentic" OR "AI Agent" OR "Automation Architect" remote'
+  - name: Ashby — Brand & Visual Designer
+    query: 'site:jobs.ashbyhq.com "Brand Designer" OR "Brand Identity" OR "Visual Designer" OR "Art Director" remote'
     enabled: true
 
-  # -- Greenhouse --
-  - name: Greenhouse — AI PM
-    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "AI Product Manager" OR "Senior Product Manager" AI remote'
+  - name: Ashby — Video Editor & Creative Producer
+    query: 'site:jobs.ashbyhq.com "Video Editor" OR "Creative Producer" OR "Content Creator" remote OR "United Kingdom"'
     enabled: true
 
-  - name: Greenhouse — SA & FDE
-    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Solutions Architect" OR "Forward Deployed" AI remote'
+  # -- Greenhouse — Creative & Motion --
+  - name: Greenhouse — Motion Designer
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Motion Designer" OR "Motion Graphics" OR "Animator" remote'
     enabled: true
 
-  - name: Greenhouse — AI Engineer
-    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "AI Engineer" OR "LLM" OR "Agentic" remote'
+  - name: Greenhouse — Creative Technologist
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Creative Technologist" OR "Technical Artist" OR "XR" OR "AR Developer"'
     enabled: true
 
-  # -- Lever --
-  - name: Lever — AI PM
-    query: 'site:jobs.lever.co "AI Product Manager" OR "Solutions Architect" AI remote'
+  - name: Greenhouse — Brand & Visual Identity
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Brand Designer" OR "Identity Designer" OR "Creative Director" remote'
     enabled: true
 
-  - name: Lever — AI Roles
-    query: 'site:jobs.lever.co "AI Engineer" OR "Agentic" OR "LLMOps" OR "Automation" remote'
+  - name: Greenhouse — Video Editor
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Video Editor" OR "Creative Producer" OR "Social Content" remote'
+    enabled: true
+
+  # -- Lever — Creative Roles --
+  - name: Lever — Motion & Creative
+    query: 'site:jobs.lever.co "Motion Designer" OR "Creative Technologist" OR "Brand Designer" OR "Video Editor" remote'
+    enabled: true
+
+  - name: Lever — AR/XR
+    query: 'site:jobs.lever.co "AR Developer" OR "XR" OR "Immersive" OR "Unity" "Designer" OR "Developer" remote'
     enabled: true
 
   # -- Wellfound (startups) --
-  - name: Wellfound — AI PM
-    query: 'site:wellfound.com "AI Product Manager" OR "AI Solutions" remote'
+  - name: Wellfound — Creative Tech Startups
+    query: 'site:wellfound.com "Motion Designer" OR "Creative Technologist" OR "Brand Designer" OR "AR" remote'
     enabled: true
 
-  # -- Workable --
-  - name: Workable — AI Roles
-    query: 'site:apply.workable.com "AI" "Product Manager" OR "Solutions Architect" OR "AI Engineer" remote'
+  # -- UK-specific job boards --
+  - name: The Dots — Motion & Creative
+    query: 'site:the-dots.com "Motion Designer" OR "Creative Technologist" OR "Brand Designer" "United Kingdom" OR "London" OR "Belfast" OR "remote"'
     enabled: true
 
-  # -- No-Code / Low-Code / Automation --
-  - name: Ashby — No-Code & Automation
-    query: 'site:jobs.ashbyhq.com "no-code" OR "low-code" OR "automation engineer" OR "n8n" OR "Make" OR "Airtable" remote senior'
+  - name: Creativepool — Motion & Design
+    query: 'site:creativepool.com "Motion Designer" OR "Motion Graphics" OR "Creative Technologist" UK OR remote'
     enabled: true
 
-  - name: Greenhouse — No-Code & Automation
-    query: 'site:job-boards.greenhouse.io "no-code" OR "low-code" OR "automation engineer" OR "business systems" senior remote'
+  - name: Workable — Creative Roles UK
+    query: 'site:apply.workable.com "Motion Designer" OR "Creative Technologist" OR "Brand Designer" OR "Video Editor" "United Kingdom" OR remote'
     enabled: true
 
-  - name: GTM Engineer — All portals
-    query: '"GTM Engineer" OR "RevOps Engineer" OR "Growth Engineer" automation Airtable OR Make OR Clay remote'
+  # -- Games & Interactive --
+  - name: Games jobs — Technical Artist & AR
+    query: '"Technical Artist" OR "VFX Artist" OR "Unity Developer" "game" OR "studio" remote OR "United Kingdom" site:jobs.ashbyhq.com OR site:jobs.lever.co'
     enabled: true
 
-  # -- Voice AI & Conversational AI --
-  - name: Voice AI — FDE & SA
-    query: 'site:job-boards.greenhouse.io OR site:jobs.ashbyhq.com "Voice AI" OR "Conversational AI" OR "Speech" "Solutions" OR "Forward Deployed" OR "Customer Engineer"'
+  # -- Social & Content Platforms --
+  - name: Social Platforms — Creative Roles
+    query: '"Creative Strategist" OR "Creative Producer" OR "Motion Designer" "TikTok" OR "Meta" OR "Snap" OR "YouTube" remote'
     enabled: true
 
-  - name: Voice AI — AI Engineer
-    query: 'site:job-boards.greenhouse.io OR site:jobs.ashbyhq.com "Voice" OR "Speech" "AI Engineer" OR "Deployment" OR "Integration"'
-    enabled: true
-
-  # -- Contact Center AI --
-  - name: Contact Center AI — SA & SE
-    query: '"contact center" OR "customer service" "AI" "Solutions Architect" OR "Solutions Engineer" OR "Forward Deployed" remote'
-    enabled: true
-
-  # -- FDE specific (cross-portal) --
-  - name: FDE & Deployed Engineer — All portals
-    query: '"Forward Deployed Engineer" OR "Deployed Engineer" OR "Deployment Engineer" AI site:job-boards.greenhouse.io OR site:jobs.ashbyhq.com OR site:jobs.lever.co'
-    enabled: true
-
-  # -- RemoteFront (aggregator) --
-  - name: RemoteFront — AI & Automation
-    query: 'site:remotefront.com "AI Engineer" OR "Solutions Engineer" OR "Automation" OR "LLM" OR "Agent" remote'
+  # -- Snap AR / Lens Studio specific --
+  - name: Snap Inc — AR & Creative
+    query: 'site:snap.com/en-US/jobs "AR" OR "Lens" OR "Creative Technologist" OR "Motion Designer"'
     enabled: true
 
 # -- Tracked companies --
@@ -193,527 +203,357 @@ search_queries:
 
 tracked_companies:
 
-  # -- AI Labs & LLM providers --
+  # -- AR / XR / Immersive Tech --
 
-  - name: Anthropic
-    careers_url: https://job-boards.greenhouse.io/anthropic
-    api: https://boards-api.greenhouse.io/v1/boards/anthropic/jobs
-    enabled: true
-
-  - name: OpenAI
-    careers_url: https://openai.com/careers
+  - name: Snap Inc
+    careers_url: https://snap.com/en-US/jobs
     scan_method: websearch
-    scan_query: 'site:openai.com/careers "Solutions" OR "Forward Deployed" OR "AI Engineer"'
+    scan_query: 'site:snap.com/en-US/jobs "AR" OR "Lens Studio" OR "Creative Technologist" OR "Motion"'
+    notes: "Venice CA / London / Remote. Snap AR, Lens Studio platform — directly relevant to Klick lens work."
     enabled: true
 
-  # -- Voice AI & Conversational AI --
-
-  - name: PolyAI
-    careers_url: https://job-boards.eu.greenhouse.io/polyai
-    api: https://boards-api.greenhouse.io/v1/boards/polyai/jobs
-    notes: "UK. Voice AI for enterprise contact centers."
+  - name: Niantic
+    careers_url: https://job-boards.greenhouse.io/niantic
+    api: https://boards-api.greenhouse.io/v1/boards/niantic/jobs
+    notes: "San Francisco / London. AR platform (Pokemon Go, Lightship). Unity + AR roles."
     enabled: true
 
-  - name: Parloa
-    careers_url: https://job-boards.eu.greenhouse.io/parloa
-    api: https://boards-api.greenhouse.io/v1/boards/parloa/jobs
-    notes: "Berlin EMEA. Voice AI enterprise."
-    enabled: true
-
-  - name: Intercom
-    careers_url: https://job-boards.greenhouse.io/intercom
-    api: https://boards-api.greenhouse.io/v1/boards/intercom/jobs
-    notes: "Dublin EMEA. Fin AI agent."
-    enabled: true
-
-  - name: Hume AI
-    careers_url: https://job-boards.greenhouse.io/humeai
-    api: https://boards-api.greenhouse.io/v1/boards/humeai/jobs
-    notes: "NYC. Empathic voice AI."
-    enabled: true
-
-  - name: ElevenLabs
-    careers_url: https://jobs.ashbyhq.com/elevenlabs
+  - name: Meta Reality Labs
+    careers_url: https://www.metacareers.com
     scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/elevenlabs'
-    notes: "Voice AI TTS leader."
+    scan_query: 'site:metacareers.com "AR" OR "XR" OR "Creative Technologist" OR "Technical Artist" OR "Motion Designer"'
+    notes: "Remote / London. Quest VR + AR glasses — relevant to LudoVR/Meta XR SDK experience."
     enabled: true
 
-  - name: Deepgram
-    careers_url: https://jobs.ashbyhq.com/deepgram
+  - name: Apple Vision Pro (Design)
+    careers_url: https://jobs.apple.com
     scan_method: websearch
-    scan_query: 'site:deepgram.com/careers OR "deepgram" "Solutions" OR "AI Engineer" site:jobs.ashbyhq.com'
-    notes: "STT/TTS APIs."
+    scan_query: 'site:jobs.apple.com "AR" OR "Spatial" OR "Vision Pro" OR "Creative Technologist" OR "Motion Designer"'
+    notes: "Remote UK / London. visionOS, ARKit — relevant to ARAsteroids/ARKit background."
     enabled: true
 
-  - name: Vapi
-    careers_url: https://jobs.ashbyhq.com/vapi
+  - name: 8th Wall (Niantic)
+    careers_url: https://job-boards.greenhouse.io/niantic
+    api: https://boards-api.greenhouse.io/v1/boards/niantic/jobs
+    notes: "WebAR platform. Covered under Niantic umbrella."
+    enabled: true
+
+  - name: UNIT9
+    careers_url: https://www.unit9.com/careers
     scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/vapi'
-    notes: "Voice AI infrastructure."
+    scan_query: 'site:unit9.com/careers "Creative Technologist" OR "AR" OR "Motion Designer" OR "Technical Director"'
+    notes: "London UK. Award-winning creative technology studio — AR, interactive, brand."
     enabled: true
 
-  - name: Bland AI
-    careers_url: https://jobs.ashbyhq.com/bland
+  - name: Nexus Studios
+    careers_url: https://nexusstudios.com/careers
     scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/bland'
-    notes: "Voice phone agents. $65M Series B."
+    scan_query: '"nexus studios" careers "Motion Designer" OR "AR" OR "Creative Technologist" OR "Animator"'
+    notes: "London UK. Animation and immersive experience studio."
     enabled: true
 
-  # -- AI-native platforms (FDE/SA teams) --
+  # -- Motion Design & Animation Studios --
 
-  - name: Retool
-    careers_url: https://retool.com/careers
+  - name: Buck
+    careers_url: https://buck.co/careers
     scan_method: websearch
-    scan_query: 'site:retool.com/careers "Deployed" OR "AI" OR "Solutions"'
-    notes: "London. Popularized Deployed Engineer role."
+    scan_query: 'site:buck.co/careers OR "buck design" jobs "Motion Designer" OR "Animator" OR "Art Director"'
+    notes: "NYC / Sydney / Remote. Top-tier motion design studio — dream employer for motion work."
     enabled: true
 
-  - name: Airtable
-    careers_url: https://job-boards.greenhouse.io/airtable
-    api: https://boards-api.greenhouse.io/v1/boards/airtable/jobs
-    notes: "No-code + AI platform."
-    enabled: true
-
-  - name: Vercel
-    careers_url: https://job-boards.greenhouse.io/vercel
-    api: https://boards-api.greenhouse.io/v1/boards/vercel/jobs
-    notes: "AI SDK, v0.dev. Frontend AI tooling."
-    enabled: true
-
-  - name: Temporal
-    careers_url: https://job-boards.greenhouse.io/temporal
-    api: https://boards-api.greenhouse.io/v1/boards/temporal/jobs
-    notes: "Workflow orchestration."
-    enabled: true
-
-  - name: Arize AI
-    careers_url: https://job-boards.greenhouse.io/arizeai
-    api: https://boards-api.greenhouse.io/v1/boards/arizeai/jobs
-    notes: "LLMOps / AI observability."
-    enabled: true
-
-  - name: RunPod
-    careers_url: https://job-boards.greenhouse.io/runpod
-    api: https://boards-api.greenhouse.io/v1/boards/runpod/jobs
-    notes: "GPU cloud for AI."
-    enabled: true
-
-  - name: Glean
-    careers_url: https://job-boards.greenhouse.io/gleanwork
-    api: https://boards-api.greenhouse.io/v1/boards/gleanwork/jobs
-    notes: "Enterprise AI search."
-    enabled: true
-
-  # -- Contact Center AI & CX --
-
-  - name: Ada
-    careers_url: https://job-boards.greenhouse.io/ada
+  - name: Tendril
+    careers_url: https://tendril.ca/careers
     scan_method: websearch
-    scan_query: '"ada.cx" OR "ada" "AI" "Solutions" OR "Engineer" site:jobs.ashbyhq.com OR site:job-boards.greenhouse.io'
-    notes: "Toronto + remote. AI customer service."
+    scan_query: '"tendril" careers "Motion Designer" OR "Animator" OR "Director"'
+    notes: "Toronto + remote. Premium motion design and visual effects studio."
     enabled: true
 
-  - name: LivePerson
-    careers_url: https://liveperson.com/company/careers
+  - name: Giant Ant
+    careers_url: https://giantant.ca/careers
     scan_method: websearch
-    scan_query: 'site:liveperson.com/careers OR "liveperson" "Solutions" OR "AI" site:job-boards.greenhouse.io'
-    notes: "Remote EMEA. Conversational AI enterprise."
+    scan_query: '"giant ant" careers "Motion Designer" OR "Animator" OR "Director"'
+    notes: "Vancouver + remote. Award-winning animation and motion design."
     enabled: true
 
-  - name: Sierra
-    careers_url: https://jobs.ashbyhq.com/sierra
+  - name: Territory Studio
+    careers_url: https://territorystudio.com/careers
     scan_method: websearch
-    scan_query: '"sierra.ai" "AI" "Forward Deployed" OR "Applied" OR "Solutions" site:jobs.ashbyhq.com'
-    notes: "Bret Taylor (ex-CEO Salesforce). AI customer agents."
+    scan_query: '"territory studio" careers "Motion Designer" OR "UI Designer" OR "Visual Designer"'
+    notes: "London / SF. Screen graphics for film and TV (Blade Runner, Westworld). UK-based."
     enabled: true
 
-  - name: Decagon
-    careers_url: https://jobs.ashbyhq.com/decagon
+  - name: ManvsMachine
+    careers_url: https://mvsm.com/careers
     scan_method: websearch
-    scan_query: '"decagon" "AI" "Forward Deployed" OR "Solutions" site:jobs.ashbyhq.com'
-    notes: "AI customer support agents."
+    scan_query: '"ManvsMachine" OR "mvsm" careers "Motion Designer" OR "Director" OR "Animator"'
+    notes: "London UK. High-end motion design studio (Apple, Nike campaigns)."
     enabled: true
 
-  # -- Enterprise comms & contact center --
+  - name: Framestore
+    careers_url: https://job-boards.greenhouse.io/framestore
+    api: https://boards-api.greenhouse.io/v1/boards/framestore/jobs
+    notes: "London UK. Oscar-winning VFX & animation studio (Marvel, HP). Motion + VFX."
+    enabled: true
 
-  - name: Talkdesk
-    careers_url: https://www.talkdesk.com/careers
+  - name: Dneg
+    careers_url: https://dneg.com/careers
     scan_method: websearch
-    scan_query: 'site:talkdesk.com/careers "AI" OR "Solutions Architect" OR "AI Engineer"'
-    notes: "Lisbon. Contact center AI. EMEA friendly."
+    scan_query: 'site:dneg.com/careers "Motion Designer" OR "VFX Artist" OR "Animator" OR "Technical Artist"'
+    notes: "London / Belfast / Remote. DNEG — major VFX/animation studio with Belfast office."
     enabled: true
 
-  - name: Twilio
-    careers_url: https://www.twilio.com/en-us/company/jobs
+  - name: Blue Zoo Animation
+    careers_url: https://www.bluezoo.co.uk/careers
     scan_method: websearch
-    scan_query: 'site:twilio.com/company/jobs "AI" OR "Voice" "Solutions" OR "Architect"'
-    notes: "Voice/messaging infrastructure."
+    scan_query: '"blue zoo" careers "Motion Designer" OR "Animator" OR "Art Director"'
+    notes: "London UK. BAFTA-winning animation studio. Independent."
     enabled: true
 
-  - name: Dialpad
-    careers_url: https://www.dialpad.com/careers
+  # -- Creative Tech & Digital Agencies --
+
+  - name: MediaMonks
+    careers_url: https://jobs.mediamonks.com
     scan_method: websearch
-    scan_query: '"dialpad" "AI" "Solutions" OR "Engineer" site:job-boards.greenhouse.io OR site:jobs.ashbyhq.com'
-    notes: "Voice AI for business comms."
+    scan_query: 'site:jobs.mediamonks.com "Motion Designer" OR "Creative Technologist" OR "AR" OR "Brand Designer"'
+    notes: "Global / Remote. S4Capital digital production arm. Large creative tech team."
     enabled: true
 
-  - name: Gong
-    careers_url: https://www.gong.io/careers
+  - name: Superside
+    careers_url: https://jobs.ashbyhq.com/superside
     scan_method: websearch
-    scan_query: 'site:gong.io/careers "AI" OR "Solutions" OR "Architect"'
-    notes: "Revenue intelligence with voice AI."
+    scan_query: 'site:jobs.ashbyhq.com/superside'
+    notes: "Remote-first. Subscription creative agency — motion, brand, social creative."
     enabled: true
 
-  - name: Genesys
-    careers_url: https://www.genesys.com/careers
+  - name: Moving Brands
+    careers_url: https://movingbrands.com/work-with-us
     scan_method: websearch
-    scan_query: 'site:genesys.com/careers "AI" "Solutions Architect" OR "AI Engineer"'
-    notes: "Contact center cloud + AI."
+    scan_query: '"moving brands" careers OR jobs "Brand Designer" OR "Motion Designer" OR "Creative Director"'
+    notes: "London / Zurich. Brand identity and motion design agency."
     enabled: true
 
-  - name: Salesforce
-    careers_url: https://careers.salesforce.com
+  - name: Pentagram
+    careers_url: https://pentagram.com/about/join
     scan_method: websearch
-    scan_query: 'site:careers.salesforce.com "Forward Deployed" OR "AI Engineer" OR "Agentforce"'
-    notes: "Agentforce = AI agents platform."
+    scan_query: '"pentagram" careers OR jobs "Brand Designer" OR "Motion Designer" OR "Designer"'
+    notes: "London / NYC. World's largest independent design consultancy."
     enabled: true
 
-  # -- AI infra & LLMOps --
+  # -- Design & Creative Tools Companies --
 
-  - name: Langfuse
-    careers_url: https://langfuse.com/careers
+  - name: Figma
+    careers_url: https://job-boards.greenhouse.io/figma
+    api: https://boards-api.greenhouse.io/v1/boards/figma/jobs
+    notes: "Remote / SF / London. Design tool — motion, brand, product design roles."
+    enabled: true
+
+  - name: Adobe
+    careers_url: https://adobe.wd5.myworkdayjobs.com/external_experienced
     scan_method: websearch
-    scan_query: '"langfuse" careers OR jobs "engineer" OR "solutions"'
-    notes: "Berlin. LLMOps / observability."
+    scan_query: 'site:adobe.com/careers "Motion Designer" OR "Creative Technologist" OR "AR" OR "Brand Designer" remote OR "United Kingdom"'
+    notes: "Remote / London. After Effects, Premiere, Firefly AI — direct tool alignment."
     enabled: true
 
-  - name: Lindy
-    careers_url: https://jobs.ashbyhq.com/lindy
+  - name: Canva
+    careers_url: https://job-boards.greenhouse.io/canva
+    api: https://boards-api.greenhouse.io/v1/boards/canva/jobs
+    notes: "Remote / London. Design platform — motion, brand, video editor roles."
+    enabled: true
+
+  - name: Framer
+    careers_url: https://jobs.ashbyhq.com/framer
     scan_method: websearch
-    scan_query: '"lindy.ai" "AI" "Forward Deployed" OR "Solutions" site:jobs.ashbyhq.com'
-    notes: "AI agent management platform."
+    scan_query: 'site:jobs.ashbyhq.com/framer'
+    notes: "Amsterdam / Remote. No-code web design tool — aligns with Tolu's Framer portfolio work."
     enabled: true
 
-  - name: Cognigy
-    careers_url: https://careers.cognigy.com
+  - name: Lottiefiles
+    careers_url: https://lottiefiles.com/careers
     scan_method: websearch
-    scan_query: '"cognigy" careers "AI" OR "Solutions" OR "Engineer"'
-    notes: "Dusseldorf EMEA. Conversational AI enterprise."
+    scan_query: '"lottiefiles" careers OR jobs "Motion Designer" OR "Designer" OR "Creative"'
+    notes: "Remote. Animation file format platform — motion design community focus."
     enabled: true
 
-  - name: Speechmatics
-    careers_url: https://job-boards.greenhouse.io/speechmatics
-    api: https://boards-api.greenhouse.io/v1/boards/speechmatics/jobs
-    notes: "Cambridge UK. Speech recognition platform."
-    enabled: true
+  # -- Social / Content Platforms --
 
-  # -- No-Code/Low-Code & Automation --
-
-  - name: n8n
-    careers_url: https://jobs.ashbyhq.com/n8n
+  - name: TikTok (ByteDance)
+    careers_url: https://careers.tiktok.com
     scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/n8n'
-    notes: "Berlin + remote EU/US. Workflow automation."
+    scan_query: 'site:careers.tiktok.com "Motion Designer" OR "Creative Strategist" OR "Creative Producer" OR "Brand Designer" "United Kingdom" OR remote'
+    notes: "London UK. TikTok Creative Lab — social video and creative strategy roles."
     enabled: true
 
-  - name: Zapier
-    careers_url: https://jobs.ashbyhq.com/zapier
+  - name: YouTube (Google)
+    careers_url: https://careers.google.com
     scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/zapier'
-    notes: "Remote-first. Automation platform leader."
-    enabled: true
-
-  - name: Make.com (Celonis)
-    careers_url: https://www.make.com/en/careers
-    scan_method: websearch
-    scan_query: 'site:make.com/en/careers OR "make.com" "engineer" OR "solutions" site:jobs.ashbyhq.com'
-    notes: "Celonis parent company. Automation platform."
-    enabled: true
-
-  # -- Ashby-based (Playwright direct) --
-
-  - name: Cohere
-    careers_url: https://jobs.ashbyhq.com/cohere
-    notes: "AI/LLM provider. Toronto + remote."
-    enabled: true
-
-  - name: LangChain
-    careers_url: https://jobs.ashbyhq.com/langchain
-    notes: "LangChain/LangSmith framework."
-    enabled: true
-
-  - name: Pinecone
-    careers_url: https://jobs.ashbyhq.com/pinecone
-    notes: "Vector database."
-    enabled: true
-
-  # -- Lever-based (Playwright direct) --
-
-  - name: Mistral AI
-    careers_url: https://jobs.lever.co/mistral
-    notes: "Paris. European AI lab."
-    enabled: true
-
-  - name: Weights & Biases
-    careers_url: https://jobs.lever.co/wandb
-    notes: "MLOps platform."
-    enabled: true
-
-  - name: Palantir
-    careers_url: https://jobs.lever.co/palantir
-    notes: "FDE roles. Mostly US/London."
-    enabled: true
-
-  # -- European tech (EMEA-friendly) --
-
-  - name: Factorial
-    careers_url: https://job-boards.greenhouse.io/factorial
-    scan_method: websearch
-    scan_query: 'site:jobs.greenhouse.io/factorial'
-    notes: "Barcelona. HR SaaS unicorn."
-    enabled: true
-
-  - name: Attio
-    careers_url: https://jobs.ashbyhq.com/attio
-    scan_method: websearch
-    scan_query: 'site:attio.com/careers OR site:jobs.ashbyhq.com/attio'
-    notes: "Remote EU. AI-native CRM. Series B $52M."
-    enabled: true
-
-  - name: Tinybird
-    careers_url: https://jobs.ashbyhq.com/tinybird
-    scan_method: websearch
-    scan_query: 'site:tinybird.co/careers OR site:jobs.ashbyhq.com/tinybird'
-    notes: "Remote. Real-time data platform."
-    enabled: true
-
-  - name: Clarity AI
-    careers_url: https://jobs.lever.co/clarity-ai
-    scan_method: websearch
-    scan_query: 'site:clarity.ai/careers OR site:jobs.lever.co/clarity-ai'
-    notes: "Madrid/Remote. Sustainability analytics with AI."
-    enabled: true
-
-  - name: Travelperk
-    careers_url: https://jobs.ashbyhq.com/travelperk
-    scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/travelperk'
-    notes: "Barcelona. Business travel unicorn."
-    enabled: true
-
-  # -- DACH & European AI ecosystem --
-  # All entries below have been verified against the Greenhouse / Ashby /
-  # Lever / Workable APIs or live job boards. Greenhouse boards expose a
-  # JSON API at https://boards-api.greenhouse.io/v1/boards/{slug}/jobs which
-  # the scanner can hit directly via the api: field.
-
-  # -- DACH AI labs & frontier model providers --
-
-  - name: Aleph Alpha
-    careers_url: https://jobs.ashbyhq.com/AlephAlpha
-    scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/AlephAlpha'
-    notes: "Heidelberg DE. Sovereign European LLM provider, enterprise & government focus."
-    enabled: true
-
-  - name: DeepL
-    careers_url: https://jobs.ashbyhq.com/DeepL
-    scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/DeepL'
-    notes: "Cologne DE. Translation & language AI. 60+ open roles, EU/DACH heavy."
-    enabled: true
-
-  - name: Black Forest Labs
-    careers_url: https://job-boards.greenhouse.io/blackforestlabs
-    api: https://boards-api.greenhouse.io/v1/boards/blackforestlabs/jobs
-    notes: "Freiburg DE / SF. FLUX image models, ex-Stable Diffusion team."
-    enabled: true
-
-  - name: Helsing
-    careers_url: https://job-boards.greenhouse.io/helsing
-    api: https://boards-api.greenhouse.io/v1/boards/helsing/jobs
-    notes: "Munich / Berlin / London / Paris. Defence AI unicorn. 100+ roles, ML & FDE."
-    enabled: true
-
-  # -- DACH enterprise & SaaS (AI-heavy) --
-
-  - name: Celonis
-    careers_url: https://job-boards.greenhouse.io/celonis
-    api: https://boards-api.greenhouse.io/v1/boards/celonis/jobs
-    notes: "Munich / NYC. Process intelligence, Applied AI Engineer roles, Field CTOs."
-    enabled: true
-
-  - name: Contentful
-    careers_url: https://job-boards.greenhouse.io/contentful
-    api: https://boards-api.greenhouse.io/v1/boards/contentful/jobs
-    notes: "Berlin / Denver. Headless CMS, AI content workflows."
-    enabled: true
-
-  - name: GetYourGuide
-    careers_url: https://job-boards.greenhouse.io/getyourguide
-    api: https://boards-api.greenhouse.io/v1/boards/getyourguide/jobs
-    notes: "Berlin. Travel marketplace, ML & data platform roles."
-    enabled: true
-
-  - name: HelloFresh
-    careers_url: https://job-boards.greenhouse.io/hellofresh
-    api: https://boards-api.greenhouse.io/v1/boards/hellofresh/jobs
-    notes: "Berlin. Meal kit unicorn, large data/ML org."
-    enabled: true
-
-  # -- DACH fintech --
-
-  - name: N26
-    careers_url: https://job-boards.greenhouse.io/n26
-    api: https://boards-api.greenhouse.io/v1/boards/n26/jobs
-    notes: "Berlin / Barcelona. Mobile bank, ~50 roles, ML & risk."
-    enabled: true
-
-  - name: Trade Republic
-    careers_url: https://job-boards.greenhouse.io/traderepublicbank
-    api: https://boards-api.greenhouse.io/v1/boards/traderepublicbank/jobs
-    notes: "Berlin / London / Paris. Neobroker, ~50 roles, platform & data."
-    enabled: true
-
-  - name: SumUp
-    careers_url: https://job-boards.greenhouse.io/sumup
-    api: https://boards-api.greenhouse.io/v1/boards/sumup/jobs
-    notes: "Berlin / London. Payments fintech, EU + LATAM hiring."
-    enabled: true
-
-  - name: Qonto
-    careers_url: https://jobs.lever.co/qonto
-    notes: "Paris / Berlin / Barcelona / Milan. SMB neobank, MLOps for AI Product roles."
-    enabled: true
-
-  # -- DACH logistics / mobility --
-
-  - name: Forto
-    careers_url: https://jobs.lever.co/forto
-    notes: "Berlin DE. Digital freight forwarder, product & data roles, German + English."
-    enabled: true
-
-  # -- Switzerland / Austria AI --
-
-  - name: Lakera
-    careers_url: https://jobs.ashbyhq.com/lakera.ai
-    scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/lakera.ai'
-    notes: "Zurich CH / SF. AI security & guardrails. Has Forward Deployed Engineer roles."
-    enabled: true
-
-  - name: Scandit
-    careers_url: https://job-boards.greenhouse.io/scandit
-    api: https://boards-api.greenhouse.io/v1/boards/scandit/jobs
-    notes: "Zurich CH. Computer vision / smart data capture, ML roles."
-    enabled: true
-
-  - name: Cradle
-    careers_url: https://jobs.ashbyhq.com/cradlebio
-    scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/cradlebio'
-    notes: "Zurich CH / Amsterdam. AI-guided protein design, ML researcher roles."
-    enabled: true
-
-  # -- France AI ecosystem --
-
-  - name: Hugging Face
-    careers_url: https://apply.workable.com/huggingface/
-    scan_method: websearch
-    scan_query: 'site:apply.workable.com/huggingface'
-    notes: "Paris / NYC / Remote. ML hub & open-source models."
-    enabled: true
-
-  - name: Photoroom
-    careers_url: https://jobs.ashbyhq.com/photoroom
-    scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/photoroom'
-    notes: "Paris FR. AI photo editor, Head of CV / Head of ML roles."
-    enabled: true
-
-  - name: Pigment
-    careers_url: https://jobs.lever.co/pigment
-    notes: "Paris FR / NYC / London. AI-powered FP&A planning platform."
-    enabled: true
-
-  # -- UK & Ireland AI (EU-friendly hiring) --
-
-  - name: Wayve
-    careers_url: https://job-boards.greenhouse.io/wayve
-    api: https://boards-api.greenhouse.io/v1/boards/wayve/jobs
-    notes: "London UK. Embodied AI for self-driving, ML & robotics roles."
-    enabled: true
-
-  - name: Isomorphic Labs
-    careers_url: https://job-boards.greenhouse.io/isomorphiclabs
-    api: https://boards-api.greenhouse.io/v1/boards/isomorphiclabs/jobs
-    notes: "London / Lausanne / Cambridge MA. DeepMind spin-out for drug discovery AI."
-    enabled: true
-
-  - name: PhysicsX
-    careers_url: https://job-boards.greenhouse.io/physicsx
-    api: https://boards-api.greenhouse.io/v1/boards/physicsx/jobs
-    notes: "London UK. Physics-informed ML for engineering, ~40 roles."
-    enabled: true
-
-  - name: Stability AI
-    careers_url: https://job-boards.greenhouse.io/stabilityai
-    api: https://boards-api.greenhouse.io/v1/boards/stabilityai/jobs
-    notes: "London / SF. Generative AI image/video research lab."
-    enabled: true
-
-  - name: Synthesia
-    careers_url: https://jobs.ashbyhq.com/synthesia
-    scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/synthesia OR site:job-boards.greenhouse.io/synthesia'
-    notes: "London UK. AI video generation for enterprise, $4B valuation."
-    enabled: true
-
-  - name: Faculty
-    careers_url: https://jobs.ashbyhq.com/faculty
-    scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/faculty'
-    notes: "London UK. Applied AI consultancy. 80+ roles, AI Safety / MLE / Delivery."
-    enabled: true
-
-  - name: Causaly
-    careers_url: https://jobs.ashbyhq.com/causaly
-    scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/causaly'
-    notes: "London / Athens. Biomedical knowledge graph + AI."
-    enabled: true
-
-  # -- Nordics AI --
-
-  - name: Lovable
-    careers_url: https://jobs.ashbyhq.com/lovable
-    scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/lovable'
-    notes: "Stockholm SE. AI app builder (text-to-app), 80+ open roles."
-    enabled: true
-
-  - name: Legora
-    careers_url: https://jobs.ashbyhq.com/legora
-    scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/legora'
-    notes: "Stockholm SE / NYC / London. AI-native legal workspace."
+    scan_query: 'site:careers.google.com "Motion Designer" OR "Creative Technologist" OR "Brand Designer" "London" OR "United Kingdom" OR remote'
+    notes: "London UK. YouTube + Google Creative Lab — motion, brand, creative tech."
     enabled: true
 
   - name: Spotify
     careers_url: https://jobs.lever.co/spotify
-    notes: "Stockholm SE / NYC / London. Audio platform, large ML/personalization org."
+    notes: "London / Stockholm / Remote. Strong brand design, motion, and creative tech team."
     enabled: true
 
-  - name: Vinted
-    careers_url: https://jobs.lever.co/vinted
-    notes: "Vilnius LT / Berlin. C2C marketplace unicorn, data science & ML roles."
+  - name: Duolingo
+    careers_url: https://job-boards.greenhouse.io/duolingo
+    api: https://boards-api.greenhouse.io/v1/boards/duolingo/jobs
+    notes: "Remote / Pittsburgh. Animation, motion design, brand — large creative org."
     enabled: true
 
-  # -- Iberia AI --
+  # -- Streaming & Media --
 
-  - name: Amplemarket
-    careers_url: https://job-boards.greenhouse.io/amplemarket
-    api: https://boards-api.greenhouse.io/v1/boards/amplemarket/jobs
-    notes: "Lisbon PT / Remote. AI-native sales platform."
+  - name: Netflix
+    careers_url: https://jobs.netflix.com
+    scan_method: websearch
+    scan_query: 'site:jobs.netflix.com "Motion Designer" OR "Creative Technologist" OR "Brand Designer" OR "Art Director" "United Kingdom" OR remote'
+    notes: "London / Remote. Netflix Creative Studios — motion, brand, title sequences."
+    enabled: true
+
+  - name: BBC
+    careers_url: https://careers.bbc.co.uk
+    scan_method: websearch
+    scan_query: 'site:careers.bbc.co.uk "Motion Designer" OR "Graphic Designer" OR "Visual Designer" OR "Motion Graphics"'
+    notes: "London / Salford / Belfast. BBC Creative — motion graphics, brand design, broadcast."
+    enabled: true
+
+  - name: Channel 4
+    careers_url: https://jobs.channel4.com
+    scan_method: websearch
+    scan_query: 'site:jobs.channel4.com "Motion Designer" OR "Creative" OR "Brand Designer" OR "Graphic Designer"'
+    notes: "London UK. Channel 4 Creative — broadcast motion and brand."
+    enabled: true
+
+  - name: Sky
+    careers_url: https://careers.sky.com
+    scan_method: websearch
+    scan_query: 'site:careers.sky.com "Motion Designer" OR "Brand Designer" OR "Creative Technologist" OR "Art Director"'
+    notes: "London / Belfast. Sky Creative Agency — motion, brand, broadcast."
+    enabled: true
+
+  # -- Games & Interactive Studios --
+
+  - name: Unity Technologies
+    careers_url: https://job-boards.greenhouse.io/unity
+    api: https://boards-api.greenhouse.io/v1/boards/unity/jobs
+    notes: "Remote / London. Unity engine — Technical Artist, AR/XR developer roles."
+    enabled: true
+
+  - name: Activision Blizzard King
+    careers_url: https://job-boards.greenhouse.io/activision
+    api: https://boards-api.greenhouse.io/v1/boards/activision/jobs
+    notes: "London / Remote. King (Candy Crush) has large motion and brand creative team."
+    enabled: true
+
+  - name: Ubisoft
+    careers_url: https://www.ubisoft.com/en-gb/company/careers
+    scan_method: websearch
+    scan_query: 'site:ubisoft.com/company/careers "Motion Designer" OR "Technical Artist" OR "VFX Artist" OR "AR" "United Kingdom" OR remote'
+    notes: "Newcastle UK / Remote. AAA games studio — Technical Artist, motion roles."
+    enabled: true
+
+  # -- EdTech & Learning Platforms --
+
+  - name: Headspace
+    careers_url: https://jobs.lever.co/headspace
+    notes: "Remote / London. Meditation app — strong motion design, illustration, brand."
+    enabled: true
+
+  - name: Coursera
+    careers_url: https://job-boards.greenhouse.io/coursera
+    api: https://boards-api.greenhouse.io/v1/boards/coursera/jobs
+    notes: "Remote. EdTech platform — motion, brand, video production roles."
+    enabled: true
+
+  # -- UK Creative & Brand Agencies --
+
+  - name: Superunion
+    careers_url: https://superunion.com/careers
+    scan_method: websearch
+    scan_query: '"superunion" careers OR jobs "Brand Designer" OR "Motion Designer" OR "Creative Director"'
+    notes: "London UK. Global brand design agency (WPP group). Identity, motion, strategy."
+    enabled: true
+
+  - name: SomeOne
+    careers_url: https://someoneinlondon.com/join-us
+    scan_method: websearch
+    scan_query: '"someoneinlondon" OR "SomeOne" careers "Brand Designer" OR "Motion Designer" OR "Designer"'
+    notes: "London UK. Independent brand identity studio. High-craft work."
+    enabled: true
+
+  - name: Wolff Olins
+    careers_url: https://www.wolffolins.com/careers
+    scan_method: websearch
+    scan_query: '"wolff olins" careers OR jobs "Brand Designer" OR "Motion Designer" OR "Creative Director"'
+    notes: "London / NYC. Global brand strategy and identity — blue-chip clients."
+    enabled: true
+
+  - name: Landor & Fitch
+    careers_url: https://landorandfitch.com/en/careers
+    scan_method: websearch
+    scan_query: '"landor" careers "Brand Designer" OR "Motion Designer" OR "Visual Designer"'
+    notes: "London UK (WPP). Major brand identity agency. Global clients."
+    enabled: true
+
+  - name: Koto Studio
+    careers_url: https://koto.studio/careers
+    scan_method: websearch
+    scan_query: '"koto studio" careers OR jobs "Brand Designer" OR "Motion Designer" OR "Designer"'
+    notes: "London / NYC / Berlin. Modern brand identity studio. Strong motion design."
+    enabled: true
+
+  # -- Tech Companies with Strong Creative Teams --
+
+  - name: Monzo
+    careers_url: https://job-boards.greenhouse.io/monzo
+    api: https://boards-api.greenhouse.io/v1/boards/monzo/jobs
+    notes: "London UK / Remote. Neobank with well-regarded in-house brand and motion team."
+    enabled: true
+
+  - name: Revolut
+    careers_url: https://job-boards.greenhouse.io/revolut
+    api: https://boards-api.greenhouse.io/v1/boards/revolut/jobs
+    notes: "London UK / Remote. Fintech unicorn — motion, brand, visual design team."
+    enabled: true
+
+  - name: Deliveroo
+    careers_url: https://job-boards.greenhouse.io/deliveroo
+    api: https://boards-api.greenhouse.io/v1/boards/deliveroo/jobs
+    notes: "London UK / Remote. Strong in-house creative and brand team."
+    enabled: true
+
+  - name: Bumble
+    careers_url: https://job-boards.greenhouse.io/bumble
+    api: https://boards-api.greenhouse.io/v1/boards/bumble/jobs
+    notes: "London / Austin. Brand-led consumer app — motion, brand, creative director roles."
+    enabled: true
+
+  - name: Innocent Drinks
+    careers_url: https://www.innocentdrinks.co.uk/jobs
+    scan_method: websearch
+    scan_query: 'site:innocentdrinks.co.uk/jobs "Brand Designer" OR "Motion Designer" OR "Creative"'
+    notes: "London UK. Brand-forward consumer company. Creative team roles."
+    enabled: true
+
+  # -- Advertising & Campaign Production --
+
+  - name: Wieden+Kennedy London
+    careers_url: https://wk.com/offices/london
+    scan_method: websearch
+    scan_query: '"wieden kennedy london" careers OR jobs "Motion Designer" OR "Art Director" OR "Creative"'
+    notes: "London UK. Top creative advertising agency (Nike, Lurpak)."
+    enabled: true
+
+  - name: adam&eveDDB
+    careers_url: https://www.adamandeveddb.com/careers
+    scan_method: websearch
+    scan_query: '"adam eve ddb" OR "adamandeveddb" careers "Motion Designer" OR "Art Director" OR "Brand Designer"'
+    notes: "London UK. Top UK ad agency (John Lewis Christmas ad etc.)."
+    enabled: true
+
+  - name: Droga5 London
+    careers_url: https://droga5.com/careers
+    scan_method: websearch
+    scan_query: '"droga5" careers "Motion Designer" OR "Art Director" OR "Creative Technologist"'
+    notes: "London UK. Creative advertising agency (Accenture Song)."
     enabled: true

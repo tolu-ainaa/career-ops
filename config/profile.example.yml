@@ -3,65 +3,97 @@
 # This is the single source of truth for your personal data across all modes.
 
 candidate:
-  full_name: "Jane Smith"
-  email: "jane@example.com"
-  phone: "+1-555-0123"
-  location: "San Francisco, CA"
-  linkedin: "linkedin.com/in/janesmith"
-  portfolio_url: "https://janesmith.dev"
-  github: "github.com/janesmith"
-  twitter: "https://x.com/janesmith"
+  full_name: "Tolu Aina"
+  email: "work.ainatolulope@gmail.com"
+  phone: "07881167035"  # fill in your number
+  location: "Belfast, Northern Ireland, UK"
+  linkedin: "linkedin.com/in/tolulopeaaina"
+  portfolio_url: "https://toluaina.framer.website"
+  github: "https://github.com/tolu-ainaa"  # fill in if applicable
+  twitter: "https://x.com/tolu_ainaa"  # fill in if applicable
+  additional_urls:
+    studio: "https://galdar.studio"
+    behance: "https://behance.net/gallery/242590423/Trucall-Visual-Identity"
 
 target_roles:
-  # Your North Star roles — what you're optimizing for
   primary:
-    - "Senior AI Engineer"
-    - "Staff ML Engineer"
-  # Archetypes help the evaluation system score fit
+    - "Senior Motion Designer"
+    - "AR/VR Developer"
+    - "Creative Technologist"
   archetypes:
-    - name: "AI/ML Engineer"
+    - name: "AR/VR Developer"
+      level: "Mid-Senior"
+      fit: "primary"
+    - name: "Senior Motion Designer"
+      level: "Senior"
+      fit: "primary"
+    - name: "Creative Technologist"
+      level: "Senior"
+      fit: "primary"
+    - name: "Design Technologist"
       level: "Senior/Staff"
-      fit: "primary"        # primary = dream role, secondary = good fit, adjacent = stretch
-    - name: "AI Product Manager"
+      fit: "secondary"
+    - name: "Design Leadership / Creative Director"
       level: "Senior"
       fit: "secondary"
-    - name: "Solutions Architect"
+    - name: "Brand Identity / Marketing Designer"
       level: "Mid-Senior"
       fit: "adjacent"
 
 narrative:
-  # Your professional headline (1 line)
-  headline: "ML Engineer turned AI product builder"
-  # Your exit story — what makes you unique
-  exit_story: "Built and sold my SaaS after 5 years. Now focused on applied AI at scale."
-  # Your top 3-5 superpowers
+  headline: "Creative Technologist & AR/VR Developer building spatial experiences at the intersection of design and code"
+  exit_story: "6+ years leading motion design and animation teams across EdTech (uLesson, Miva University), now channelling that into spatial computing — building AR games, VR experiences, and AI-powered creative pipelines through GaldAR Studio."
   superpowers:
-    - "End-to-end ML pipelines"
-    - "Fast prototyping (idea to prod in 2 weeks)"
-    - "Cross-functional communication"
-  # Proof points — projects, articles, case studies with measurable impact
+    - "Unity, C#, ARKit & spatial computing (ARCore, Meta XR SDK)"
+    - "Motion design leadership — managed 20+ animators, 400+ video assets"
+    - "AI-powered production pipelines (67% efficiency gain at Miva University)"
+    - "End-to-end product thinking: from concept to shipped App Store / Play Store"
+    - "Cross-disciplinary fluency: design, engineering, and creative strategy"
   proof_points:
-    - name: "Project Alpha"
-      url: "https://janesmith.dev/project-alpha"
-      hero_metric: "Reduced inference latency 40%"
-    - name: "Open Source Tool"
-      url: "https://github.com/janesmith/tool"
-      hero_metric: "2K+ GitHub stars"
-  # Optional: dashboard/demo URL with credentials
-  # dashboard:
-  #   url: "https://janesmith.dev/demo"
-  #   password: "demo-2026"
+    - name: "ARAsteroids — Unity/ARKit iOS AR Game (MSc Dissertation)"
+      url: "https://toluaina.framer.website"
+      hero_metric: "Shipped AR game with 10-level Free + IAP roadmap targeting App Store"
+    - name: "Klick Snap Lens"
+      url: "https://galdar.studio"
+      hero_metric: "30,000+ plays"
+    - name: "Miva University AI Illustration Pipeline"
+      url: "https://linkedin.com/in/tolulopeaaina"
+      hero_metric: "~67% production efficiency improvement"
+    - name: "Trucall Visual Identity"
+      url: "https://behance.net/gallery/242590423/Trucall-Visual-Identity"
+      hero_metric: "Featured Behance case study"
+    - name: "LudoVR — Meta Quest VR Board Game"
+      url: "https://galdar.studio"
+      hero_metric: "In development — Unity + Meta XR SDK"
 
 compensation:
-  target_range: "$150K-200K"     # Your target total comp
-  currency: "USD"
-  minimum: "$120K"               # Walk-away number
-  location_flexibility: "Remote preferred, 1 week/month on-site possible"
+  target_range: "£45K-65K"
+  currency: "GBP"
+  minimum: "£38K"
+  location_flexibility: "Remote preferred; open to hybrid in Belfast or UK-wide"
 
 location:
-  country: "United States"
-  city: "San Francisco"
-  timezone: "PST"
-  visa_status: "No sponsorship needed"
-  # For remote roles outside your country:
-  # onsite_availability: "1 week/month in any city"
+  country: "United Kingdom"
+  city: "Belfast"
+  timezone: "GMT/BST"
+  visa_status: "Pursuing UK Global Talent Visa (Digital Technology, Exceptional Promise)"
+  onsite_availability: "Open to hybrid; available for on-site in Belfast or travel within UK"
+
+education:
+  - degree: "MSc Computer Science (Distinction)"
+    institution: "University of Chester"
+    year: 2026
+    notes: "Delivered graduation speech for Class of 2026"
+  - qualification: "Focus Awards Level 5 Diploma in Management & Leadership (RQF)"
+    ref: "603/3836/2"
+    status: "In progress"
+
+certifications:
+  - "Google Generative AI"
+  - "ServiceNow IT Leadership"
+  - "Graphic Design Diploma"
+
+studio:
+  name: "GaldAR Studio"
+  url: "https://galdar.studio"
+  focus: "AR/VR experiences, spatial computing, creative technology"
